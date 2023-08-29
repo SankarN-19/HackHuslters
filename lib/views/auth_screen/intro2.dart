@@ -16,7 +16,7 @@ class Introduction2 extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Container(
-              margin: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 54.0),
+              margin: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 54.0),
               width: 390.0,
               height: 402.0,
               child: Image.asset(
@@ -30,27 +30,29 @@ class Introduction2 extends StatelessWidget {
             ),
             10.heightBox,
             Container(
-              padding: EdgeInsets.fromLTRB(98.0, 25.0, 99.0, 93.0),
+              padding: const EdgeInsets.fromLTRB(98.0, 25.0, 99.0, 93.0),
               width: double.infinity,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Container(
-                    margin: EdgeInsets.fromLTRB(1.0, 0.0, 1.0, 0.0),
+                    margin: const EdgeInsets.fromLTRB(1.0, 0.0, 1.0, 0.0),
                     width: double.infinity,
                     height: 43.0,
                     decoration: BoxDecoration(
                       border: Border.all(color: titleBlack),
-                      color: Color(0xffffffff),
+                      color: const Color(0xffffffff),
                       borderRadius: BorderRadius.circular(5.0),
                     ),
-                    child: Center(
-                      child: lawyer.text
-                          .fontFamily(regular)
-                          .size(25.0)
-                          .black
-                          .make(),
-                    ),
+                    child: const Center(
+                        child: Text(
+                      'Lawyer',
+                      style: TextStyle(
+                        fontFamily: regular,
+                        fontSize: 25.0,
+                        fontWeight: FontWeight.w200,
+                      ),
+                    )),
                   ).onTap(() {
                     // ignore: unused_label
                     height:
@@ -61,21 +63,23 @@ class Introduction2 extends StatelessWidget {
                   }),
                   20.heightBox,
                   Container(
-                    margin: EdgeInsets.fromLTRB(1.0, 0.0, 1.0, 0.0),
+                    margin: const EdgeInsets.fromLTRB(1.0, 0.0, 1.0, 0.0),
                     width: double.infinity,
                     height: 43.0,
                     decoration: BoxDecoration(
                       border: Border.all(color: titleBlack),
-                      color: Color(0xffffffff),
+                      color: const Color(0xffffffff),
                       borderRadius: BorderRadius.circular(5.0),
                     ),
-                    child: Center(
-                      child: client.text
-                          .fontFamily(regular)
-                          .size(25.0)
-                          .black
-                          .make(),
-                    ),
+                    child: const Center(
+                        child: Text(
+                      'Client',
+                      style: TextStyle(
+                        fontFamily: regular,
+                        fontSize: 25.0,
+                        fontWeight: FontWeight.w200,
+                      ),
+                    )),
                   ),
                   75.heightBox,
                   Container(
@@ -85,13 +89,16 @@ class Introduction2 extends StatelessWidget {
                       color: buttonPurple,
                       borderRadius: BorderRadius.circular(50.0),
                     ),
-                    child: Center(
-                      child: Continue.text
-                          .fontFamily(semibold)
-                          .size(20)
-                          .white
-                          .make(),
-                    ),
+                    child: const Center(
+                        child: Text(
+                      'CONTINUE',
+                      style: TextStyle(
+                        fontFamily: regular,
+                        fontSize: 20.0,
+                        fontWeight: FontWeight.w200,
+                        color: Color(0xffffffff),
+                      ),
+                    )),
                   ).onTap(() {
                     Get.to(() => const LoginScreen());
                   })
