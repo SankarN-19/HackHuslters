@@ -1,6 +1,7 @@
 import 'package:legalease/consts/consts.dart';
 import 'package:legalease/consts/strings.dart';
 import 'package:legalease/consts/styles.dart';
+import 'package:legalease/views/auth_screen/intro2.dart';
 
 class introduction extends StatelessWidget {
   const introduction({super.key});
@@ -102,7 +103,9 @@ class introduction extends StatelessWidget {
                         ),
                       ),
                     ),
-                  )
+                  ).onTap(() {
+                    Get.to(() => const Introduction2());
+                  })
                 ],
               ),
             )
