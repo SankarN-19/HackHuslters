@@ -1,5 +1,5 @@
 const appname = "LegalEase";
-const welcome = "Welcome";
+const welcome = "Welcome !";
 const register = "Register";
 const email = "Email";
 const password = "Password";
@@ -8,3 +8,5 @@ const login = "Login as";
 const lawyer = "Lawyer";
 const client = "Client";
 const Continue = "Continue";
+const name = "Name";
+const password2 = "Re-enter Password";

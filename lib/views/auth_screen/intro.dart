@@ -94,7 +94,7 @@ class introduction extends StatelessWidget {
                     ),
                     child: const Center(
                       child: Text(
-                        'Get Started',
+                        'GET STARTED',
                         style: TextStyle(
                           fontSize: 15.0,
                           fontWeight: FontWeight.w500,
