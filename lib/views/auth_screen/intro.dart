@@ -1,6 +1,7 @@
 import 'package:legalease/consts/consts.dart';
 import 'package:legalease/consts/strings.dart';
 import 'package:legalease/consts/styles.dart';
+import 'package:legalease/views/auth_screen/intro2.dart';
 
 class introduction extends StatelessWidget {
   const introduction({super.key});
@@ -59,8 +60,8 @@ class introduction extends StatelessWidget {
               ),
             ),
             Container(
-              margin: EdgeInsets.fromLTRB(1.0, 0.0, 0.0, 0.0),
-              constraints: BoxConstraints(
+              margin: const EdgeInsets.fromLTRB(1.0, 0.0, 0.0, 0.0),
+              constraints: const BoxConstraints(
                 maxWidth: 319.0,
               ),
               child: const Text(
@@ -74,13 +75,13 @@ class introduction extends StatelessWidget {
               ),
             ),
             Container(
-              padding: EdgeInsets.fromLTRB(102.0, 31.0, 103.0, 57.0),
+              padding: const EdgeInsets.fromLTRB(102.0, 31.0, 103.0, 57.0),
               width: double.infinity,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Container(
-                    margin: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 32.0),
+                    margin: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 32.0),
                     width: 49.0,
                     height: 8.0,
                   ),
@@ -91,9 +92,9 @@ class introduction extends StatelessWidget {
                       color: buttonPurple,
                       borderRadius: BorderRadius.circular(50.0),
                     ),
-                    child: Center(
-                      child: const Text(
-                        'Get Started',
+                    child: const Center(
+                      child: Text(
+                        'GET STARTED',
                         style: TextStyle(
                           fontSize: 15.0,
                           fontWeight: FontWeight.w500,
@@ -102,7 +103,9 @@ class introduction extends StatelessWidget {
                         ),
                       ),
                     ),
-                  )
+                  ).onTap(() {
+                    Get.to(() => const Introduction2());
+                  })
                 ],
               ),
             )
