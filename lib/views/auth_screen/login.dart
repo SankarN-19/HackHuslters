@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:legalease/consts/consts.dart';
+import 'package:legalease/views/app_screens/home_screen.dart';
 import 'package:legalease/views/auth_screen/register.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -133,7 +134,9 @@ class LoginScreen extends StatelessWidget {
                                 .white
                                 .make(),
                           ),
-                        ),
+                        ).onInkTap(() {
+                          Get.to(() => const HomeScreen());
+                        }),
                         5.heightBox,
                         "Forgot Password?"
                             .text

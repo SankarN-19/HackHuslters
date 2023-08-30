@@ -1,4 +1,5 @@
 import 'package:legalease/consts/consts.dart';
+import 'package:legalease/views/app_screens/home_screen.dart';
 import 'package:legalease/views/widgets_common/custom_textfield.dart';
 
 class Registration extends StatelessWidget {
@@ -30,22 +31,23 @@ class Registration extends StatelessWidget {
               customTextField(hint: "Re-enter Password", title: password2),
               50.heightBox,
               Center(
-                child: Container(
-                  width: 200.0,
-                  height: 41.0,
-                  decoration: BoxDecoration(
-                    color: buttonPurple,
-                    borderRadius: BorderRadius.circular(8.0),
-                  ),
-                  child: Center(
-                    child: register.text
-                        .fontFamily(semibold)
-                        .size(20.0)
-                        .white
-                        .make(),
-                  ),
+                  child: Container(
+                width: 200.0,
+                height: 41.0,
+                decoration: BoxDecoration(
+                  color: buttonPurple,
+                  borderRadius: BorderRadius.circular(8.0),
                 ),
-              )
+                child: Center(
+                  child: register.text
+                      .fontFamily(semibold)
+                      .size(20.0)
+                      .white
+                      .make(),
+                ),
+              ).onInkTap(() {
+                Get.to(() => const HomeScreen());
+              }))
             ],
           ),
         ),
